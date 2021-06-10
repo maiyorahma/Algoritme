@@ -21,6 +21,7 @@ public class BiodataMahasiswa {
     private JButton buttonKeluar;
 
 
+
     public BiodataMahasiswa() {
         cekButton.addActionListener(new ActionListener() {
             @Override
@@ -31,16 +32,15 @@ public class BiodataMahasiswa {
                 a.setNama(nama);
                 a.setNim(nim);
 
-               labelHasil.setText("Nama = "+a.getNama() );
-               labelHasil2.setText("NIM    = "+a.getNim() );
+               labelHasil.setText("Nama                         = "+a.getNama() );
+               labelHasil2.setText("NIM                            = "+a.getNim() );
                 labelHasil3.setText("Jenjang Pendidikan = "+a.getJenjang() );
-                labelHasil4.setText("Tahun Masuk   = "+a.getTahun() );
-                labelHasil5.setText("Fakultas           = "+a.getFakultas());
-                labelHasil6.setText("Jurusan            = "+a.getJurusan());
-                labelHasil7.setText("Jenis Kelamin = "+a.getJenisKelamin());
-                labelHasil8.setText("Nomor Urut    = "+a.getNomorUrut());
+                labelHasil4.setText("Tahun Masuk            = "+a.getTahun() );
+                labelHasil5.setText("Fakultas                    = "+a.getFakultas());
+                labelHasil6.setText("Jurusan                     = "+a.getJurusan());
+                labelHasil7.setText("Jenis Kelamin          = "+a.getJenisKelamin());
+                labelHasil8.setText("Nomor Urut              = "+a.getNomorUrut());
             }
-
         });
 
         HapusButton.addActionListener(new ActionListener() {
@@ -62,6 +62,7 @@ public class BiodataMahasiswa {
         buttonKeluar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 System.exit(0);
             }
         });
